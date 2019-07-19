@@ -62,8 +62,14 @@ nav {
     font-weight: 700;
 }
 
+.nav-items li:nth-child(4) {
+    margin-top: 6px;
+    font-size: .5em;
+    opacity: .4;
+}
+
 .nav-items .focus {
-    color: var(--Dark-Grayish-Blue);
+    color: var(--Grayish-Blue);
 }
 
 .main {
