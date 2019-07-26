@@ -15,7 +15,7 @@
     <div class="logo-img">
     <img class="logo" src="/images/logo.svg" alt="Logo">
   </div>
-    <nav>
+    <nav class="nav">
       <ul class="nav-items">
         <li><a href="#">PRODUCTS</a></li>
         <li><a href="#">FEATURES</a></li>
@@ -23,13 +23,14 @@
         <li><i class="fas fa-circle"></i></li>
         <li><a class="focus" href="#">LOGIN</a></li>
       </ul>
-      <div class="mobile-menu">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
+      
 
     </nav>
+    <div class="mobile-menu" onclick="toggleMenu()">
+				<div class="one"></div>
+				<div class="two"></div>
+				<div class="three"></div>
+			</div>
   </header>
 
   <main class="main">
@@ -48,5 +49,16 @@
     <img class="illustration" src="/images/illustration-devices.svg" alt="Illustration">
   </main>
   <div class="blue-section"></div>
+
+  <script>
+    
+    const toggleMenu = () => {
+      let toggleElement = document.querySelector(".mobile-menu"),
+          navElements = document.querySelector(".nav");
+      toggleElement.classList.toggle("active");
+      navElements.classList.toggle("active");
+    }
+    
+	</script>
 </body>
 </html>
