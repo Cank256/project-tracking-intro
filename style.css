@@ -164,13 +164,20 @@ p {
     }
 
     .mobile-menu {
-        display: flex;
-        list-style: none;
-        cursor: pointer;
-    }
-
-    .mobile-menu img {
-        margin-left: 80%;
+		display: block;
+		justify-self: flex-end;
+	}
+	.mobile-menu:hover {
+		cursor: pointer;
+	}
+	.mobile-menu span {
+		width: 25px;
+        height: 3px;
+        border-radius: 6px;
+		background: hsl(230, 29%, 20%);
+        margin: 6px 0 6px 80%;
+        display: block;
+		transition: all 0.3s ease-in-out;
     }
 
     .main {
